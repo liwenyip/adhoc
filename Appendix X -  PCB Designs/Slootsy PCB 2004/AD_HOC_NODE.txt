@@ -1,0 +1,47 @@
+Field=Description,String,Description,100|Field=Designator,String,Designator,100|Field=Footprint,String,Footprint,100|Field=LibRef,String,LibRef,100|Field=Quantity,String,Quantity,100|ReportField=ProjectFileName,AD_HOC_NODE.PRJPCB|ReportField=ProjectFullPath,F:\PCB_1\AD_HOC_NODE.PRJPCB|ReportField=Title,Bill of Materials For Project [AD_HOC_NODE.PRJPCB]|ReportField=TotalQuantity,46|ReportField=ReportTime,6:50:24 PM|ReportField=ReportDate,19/05/2004|ReportField=ReportDateTime,19/05/2004 6:50:24 PM|ReportField=OutputName,Bill of Materials|ReportField=OutputType,BOM_PartType|ReportField=GeneratorName,ReportComponents|ReportField=GeneratorDescription,Component Reports|ReportField=VariantName,None|ReportField=DataSourceFileName,AD_HOC_NODE.PRJPCB|ReportField=DataSourceFullPath,F:\PCB_1\AD_HOC_NODE.PRJPCB
+Capacitor|C1|2mm Pol. Cap|Cap|1
+Capacitor|C2|2mm Pol. Cap|Cap|1
+Capacitor|C3|5mm Tant. Cap|Cap|1
+Capacitor|C4|2mm Pol. Cap|Cap|1
+Capacitor|C5|2mm Pol. Cap|Cap|1
+Capacitor|C6|5mm Tant. Cap|Cap|1
+Capacitor|C7|5mm Tant. Cap|CAP|1
+Capacitor|C8|5.6mm Ceramic Cap|Cap|1
+Capacitor|C9|5.6mm Ceramic Cap|Cap|1
+Capacitor|C10|5mm Tant. Cap|Cap|1
+Polarized Capacitor (Radial)|C11|2mm Pol. Cap|Cap Pol1|1
+Polarized Capacitor (Radial)|C12|2mm Pol. Cap|Cap Pol1|1
+Polarized Capacitor (Radial)|C13|2mm Pol. Cap|Cap Pol1|1
+Polarized Capacitor (Radial)|C14|2mm Pol. Cap|Cap Pol1|1
+Polarized Capacitor (Radial)|C15|2mm Pol. Cap|Cap Pol1|1
+Capacitor|C16|5mm Tant. Cap|Cap|1
+Capacitor|C17|5mm Tant. Cap|Cap|1
+Capacitor|C18|5mm Tant. Cap|Cap|1
+Zener Diode|D1|DIO7.1-3.9X1.9|D Zener|1
+Default Diode|D2|DIO7.1-3.9X1.9|Diode|1
+Zener Diode|D3|DIO7.1-3.9X1.9|D Zener|1
+Typical INFRARED GaAs LED|DS1|LED|LED0|1
+Typical INFRARED GaAs LED|DS2|LED|LED0|1
+Receptacle Assembly, 9 Position, Right Angle|J1|DSUB1.385-2H9|D Connector 9|1
+Header, 4-Pin|JP1|4 Way Terminal Block|Header 4|1
+Header, 4-Pin|JP2|4 Way Terminal Block|Header 4|1
+BNC Elbow Connector|P1|PCB BNC Connector - duplicate|BNC|1
+Resistor|R1|AXIAL-0.3|Res1|1
+Resistor|R2|AXIAL-0.3|Res1|1
+Resistor|R3|AXIAL-0.3|Res1|1
+Resistor|R4|AXIAL-0.3|Res1|1
+Resistor|R5|AXIAL-0.3|Res1|1
+Potentiometer|R6|VR2|RPot2|1
+Switch|S1|Reset Switch - duplicate|SW-PB|1
+|U1|PLCC Socket 44 way|PIC18C452_PLCC|1
+Series 3-Terminal Positive Regulator|U2|SFM-T3/A4.7V|LM340T5.0|1
+Series 3-Terminal Positive Regulator|U3|SFM-T3/A4.7V|LM340T5.0|1
++5V Powered RS-232 Driver/Receiver|U4|DIP-16/X1.5|MAX232EPE|1
+|U5|24 pin DIP socket for TSSOP|AD8369_DIGITAL_CONT_PWR_AMP|1
+|U6|FMRRFQ1|FMRRFQ1|1
+|U7|FMRTFQ1|FMRTFQ1|1
+Jumper Wire|W1|RAD-0.1|Jumper|1
+Jumper Wire|W2|RAD-0.1|Jumper|1
+Jumper Wire|W3|RAD-0.1|Jumper|1
+Jumper Wire|W4|RAD-0.1|Jumper|1
+Crystal Oscillator|Y1|XTAL|XTAL|1

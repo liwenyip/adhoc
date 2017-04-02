@@ -1,0 +1,157 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=E:\Thesis\Code\Code 2005-08-15\Buffersmain.o
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File001]
+Location=E:\Thesis\Code\Code 2005-08-15\Buffersmain.ERR
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File002]
+Location=E:\Thesis\Code\Code 2005-08-15\Buffers v5.o
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File003]
+Location=E:\Thesis\Code\Code 2005-08-15\Buffers v5.ERR
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File004]
+Location=E:\Thesis\Code\Code 2005-08-24\Buffersmain.o
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File005]
+Location=E:\Thesis\Code\Code 2005-08-24\Buffersmain.ERR
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File006]
+Location=E:\Thesis\Code\Code 2005-08-24\Buffers v5.o
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File007]
+Location=E:\Thesis\Code\Code 2005-08-24\Buffers v5.ERR
+Folder=Intermediary
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File008]
+Location=Buffersmain.lst
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File009]
+Location=Buffers v5.lst
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={49D3CA3F-D9A3-4518-9943-226A347E8CC7}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPAsmWin.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=
+[File010]
+Location=Buffers.cof
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPLink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=/o"$(TARGETBASE).cof"
+[File011]
+Location=Buffers.cod
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPLink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=/o"$(TARGETBASE).cof"
+[File012]
+Location=Buffers.hex
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPLink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=/o"$(TARGETBASE).cof"
+[File013]
+Location=Buffers.lst
+Folder=Output
+DeviceName=PIC18C452
+LanguageToolSuiteID={6B3DAA78-59C1-46DD-B6AA-DBDAE4E06484}
+LanguageToolID={96C98149-AA1B-4CF9-B967-FAE79CAB663C}
+LanguageToolLocation=C:\Program Files\Microchip\MPASM Suite\MPLink.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|Buffersmain.asm|Buffers v5.asm||<obj>||<lib>||<lkr>|18C452.LKR||
+SuiteArgsString=
+ToolArgsString=/o"$(TARGETBASE).cof"

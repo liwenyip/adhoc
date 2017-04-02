@@ -1,0 +1,24 @@
+Decoding
+
+Edge Sync - 33
+
+Sample, Less than 16 bits - 38/39
+Sample, More than 16 bits, not got SOF - 43/45
+Sample, More than 16 bits, found SOF - 48
+
+Sample, Less than 8 bits - 37
+Sample, Get FRAMELEN - 55
+Sample, Get Data byte - 59
+
+
+
+Encoding
+
+Toggle - 35
+Data Bit - 40
+
+
+Normal - 35/36
+Frame Length - 57
+Data Byte - 66
+

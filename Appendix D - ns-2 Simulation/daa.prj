@@ -1,0 +1,12 @@
+<project version="Crimson Editor 3.60">
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daa.cc" />
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daa.h" />
+</project>
+
+<workspace version="Crimson Editor 3.60">
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daa.cc" linenum="132" placement="2:3:-1:-1:-4:-30:22:29:842:449" />
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daa.h" linenum="105" placement="0:1:-1:-1:-4:-30:44:58:864:478" />
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daainit.cc" linenum="62" placement="0:1:-1:-1:-4:-30:110:145:806:728" />
+	<localfile path="C:\cygwin\ns\ns-2.28\daa\daainit.h" linenum="20" placement="0:1:-1:-1:-4:-30:132:174:828:757" />
+</workspace>
+

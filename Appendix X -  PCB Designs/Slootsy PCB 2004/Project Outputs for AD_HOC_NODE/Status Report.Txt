@@ -1,0 +1,9 @@
+Output: Bill of Materials
+Type  : ReportComponents
+From  : Project [AD_HOC_NODE.PRJPCB]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 6:50:43 PM On 19/05/2004

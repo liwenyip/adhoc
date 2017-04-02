@@ -1,0 +1,1 @@
+.cof; *.cod; *.err; *.lst; *.o; *.hex
