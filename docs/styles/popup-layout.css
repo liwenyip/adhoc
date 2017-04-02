@@ -1,0 +1,43 @@
+/* CSS Document */
+
+
+body {
+	background: #EEEEEE;
+}
+
+#body {
+	/* Put it in the middle of the page */
+	width: 340px;
+	margin: 0 auto;
+	padding: 0;
+
+	/* Make it nice and white and put a nice border around it */
+	background: white;
+	border: 1px solid #A9A9A9;
+	
+}
+
+
+
+/* Content Layout */
+#content {
+	/* Put it in the middle of the page, and squash it up nice and close */
+	width: 326;
+	margin: 0 auto;
+	
+	/* Keep away from the edges */
+	padding: 12px;
+	/* Put a border around it */
+	border: solid white 1px;
+	
+}
+
+
+
+/* Positioning */
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}

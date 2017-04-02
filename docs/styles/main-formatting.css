@@ -1,0 +1,91 @@
+/* CSS Document */
+
+/* Master formatting */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+
+/* Nav formatting */
+
+#topnav ul li a {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+#bottomnav ul li a {
+	color: #666666;
+}
+#bottomnav, #linearnav {
+	font-size: 80%;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+/* Content Formatting */
+
+#content > * {
+	font-size: small;
+	color: #333333;
+}
+
+#content h1, #content h2, #content h3 {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+#content h1 {
+	font-size: 240%;
+}
+
+#content h2 {
+	font-size: 160%;
+}
+#content h3 {
+	font-size: 120%;
+}
+#content p {
+	x-margin: 12px auto;
+	font-size: 100%;
+}
+#content li {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+#content p#backtotop {
+	font-size: 80%;
+	text-align: right;
+	clear: both;
+}
+#content p#backtotop a {
+	color: #0000FF;
+}		
+
+
+#footer {
+	font-size: 80%;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 24px;
+}
+#footer, div#footer a {
+	color: #AAAAAA;
+}
+#footer p {
+	margin: 6px 0px;
+}
+
+
+.quote {
+	width: 80%;
+	margin: 12px auto;
+	background: #EEEEFF;
+	padding: 12px;
+	border: 1px solid #666666;
+	font-style: italic;
+}

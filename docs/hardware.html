@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="description" content="Remote Ad Hoc Sensor Networks">
+<meta name="keywords" content="ad hoc sensor networks">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Remote Ad Hoc Sensor Networks - Hardware</title>
+<!-- InstanceEndEditable -->
+<link href="styles/main-layout.css" rel="stylesheet" type="text/css" />
+<link href="styles/main-formatting.css" rel="stylesheet" type="text/css" />
+<link href="styles/shadows.css" rel="stylesheet" type="text/css" />
+<!--[if gte ie 5.5000]>
+<style type="text/css">
+.img-shadow div, .p-shadow div { 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/drop-shadows/shadow2.png', sizingMethod='crop'); 
+	background: none;
+	}
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+	li {
+		margin-left: 0;
+	}
+</style>
+<script src="scripts/popup.js" language="javascript" type="text/javascript"></script>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="activelink" -->
+<style type="text/css">
+	a#hardware {
+		font-weight: bold;
+	}
+	#topnav a#hardware  {
+		background-color: #3A783D;
+	}
+	#bottomnav a#hardware {
+		text-decoration: underline;
+	}
+.style1 {font-size: 80%}
+</style>
+<!-- InstanceEndEditable -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77691127-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="body">
+  <div id="banner"> <!-- InstanceBeginEditable name="Banner" --><img src="images/banners/hardware.jpg" width="760" height="237" alt="Remote Ad Hoc Sensor Networks, James Cook University - Hardware" /><!-- InstanceEndEditable --></div>
+  <div id="topnav">
+    <ul>
+      <li><a id="home" href="index.html">Home</a></li>
+      <li><a id="overview" href="overview.html">Overview</a></li>
+      <li><a id="hardware" href="hardware.html">Hardware</a></li>
+      <li><a id="software" href="software.html">Software</a></li>
+      <li><a id="results" href="results.html">Results</a></li>
+      <li><a id="information" href="information.html">More Information</a></li>
+    </ul>
+  </div>
+  <div id="linearnav">
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previoustop" -->&laquo; <a href="overview.html">Overview</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nexttop" --><a href="software.html">Software</a> &raquo;<!-- InstanceEndEditable --></div>
+  </div>
+  <br style="clear:both;"/>
+  <!-- InstanceBeginEditable name="Content" -->
+  <div id="content">
+    <h2>The some-thing's connected to the some-thing... </h2>
+    <p>The hardware platform is based on the Microchip PIC18C452 microcontroller. An FM Transceiver and a Variable Gain RF Amplifier provide programmable output power, which is required for the <em>Power Aware Routing Optimisations (PARO)</em> developed by Steven Sloots in 2004. External RAM is required to cache <em>Dynamic Source Routing (DSR) </em>routing information. A real time clock is required to accurately time long sleep intervals. </p>
+    <p><strong> Please click on each component in the following block diagram to learn about it:</strong></p>
+    <table align="center">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/hardware/block-diagram.jpg" alt="Hardware Block Diagram" width="669" height="311" border="0" usemap="#Map" />
+              <map name="Map" id="Map">
+                <area shape="rect" coords="19,223,119,286" href="javascript: popup('ds1305.html', 370, 600);" alt="Real Time Clock" />
+                <area shape="rect" coords="137,224,237,286" href="javascript: popup('fm25c160.html', 370, 600);" alt="External RAM" />
+                <area shape="rect" coords="484,142,602,224" href="javascript: popup('adg918.html', 370, 600);" alt="Wideband CMOS Switch" />
+                <area shape="rect" coords="349,116,459,205" href="javascript: popup('ad8369.html', 370, 600);" alt="Variable Gain RF Amp" />
+                <area shape="rect" coords="215,124,315,186" href="javascript: popup('x2010.html', 370, 600);" alt="FM Transceiver" />
+                <area shape="rect" coords="77,124,176,184" href="javascript: popup('ice2000.html', 370, 600);" alt="PIC Microcontroller" />
+              </map>
+            </div>
+          </div></td>
+      </tr>
+      <tr>
+        <td class="caption">In case clicking on the diagram doesn't work:</td>
+      </tr>
+      <tr>
+        <td class="caption"><a href="javascript: popup('ice2000.html', 370, 600);">PIC Microcontroller</a> | <a href="javascript: popup('ds1305.html', 370, 600);">Real Time Clock</a> | <a href="javascript: popup('fm25c160.html', 370, 600);">External RAM</a> | <a href="javascript: popup('x2010.html', 370, 600);">FM Transceiver</a> | <a href="javascript: popup('ad8369.html', 370, 600);">Variable Gain RF Amp</a> | <a href="javascript: popup('adg918.html', 370, 600);">Wideband CMOS Switch </a></td>
+      </tr>
+    </table>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Honey, I shrunk the bypass relay</h2>
+    <table width="241" class="floatright">
+      <tr>
+        <td><div class="img-shadow" style="width:215px">
+            <div class="inner"><img src="images/hardware/sloots.jpg" alt="2004 Hardware" width="200" height="150" /></div>
+          </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Hardware from Steven Sloot's 
+          2004 Thesis Project
+          </p></td>
+      </tr>
+    </table>
+    <p>Because the transceiver only has one antenna connection,  the RF amplifier must be bypassed to allow reception. The antenna is normally connected directly to the transceiver, and during transmission it is connected directly to the ouptut of the amplifier (refer to the block diagram).</p>
+    <p>This was previoulsy achieved using a bypass relay, as shown in the adjacent figure (the big square red thing). The relay requires 500mA to operate, which incurs a significant power consumption overhead for transmission. In the new version of the hardware, it has been replaced with a wideband CMOS switch, which only requires 5uA to operate - a staggering power saving.</p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>And Bob's yer uncle... </h2>
+    <table>
+      <tr>
+        <td><div class="img-shadow" style="width:415px">
+            <div class="inner"><img src="images/hardware/2005pcb3.jpg" alt="2004 Hardware" width="400" height="382" /></div>
+          </div></td>
+        <td rowspan="3"><ol class="style1">
+            <li>Emitter follower voltage source for ADG918. </li>
+            <li>Power LED.</li>
+            <li>IC Socket for X2010 FM Transceiver </li>
+            <li>Communications isolation / external<br />
+              connection header.</li>
+            <li>Power connector.</li>
+            <li>RS-232 interface.</li>
+            <li>50&Omega; BNC Connector for External Antenna.</li>
+            <li>ADG918 Wideband CMOS Switch (on carrier board).</li>
+            <li>RSSI low pass RC network.</li>
+            <li>Reset switch and slow power-on reset
+              circuit.</li>
+            <li>Indicator LEDs.</li>
+            <li>RJ12 connector for MPLAB ICD2<br />
+              (not installed).</li>
+            <li>MAX232 level shifter.</li>
+            <li>Power track (note the extra thickness).</li>
+            <li>AD8369 Variable Gain RF Amplifier.</li>
+            <li>External 4Mhz crystal oscillator.</li>
+            <li>44-pin PLCC socket for MPLAB&reg;
+              ICE2000.</li>
+            <li>DS1305 Real Time Clock.</li>
+            <li>FM25C160 External Memory.</li>
+          </ol></td>
+      </tr>
+      <tr>
+        <td class="caption">PCB Revision 3, as constructed</td>
+      </tr>
+      <tr>
+        <td class="caption">&nbsp;</td>
+      </tr>
+    </table>
+    <div class="" style="font-size:90%"></div>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Links</h2>
+    <ul>
+      <li>Linkety Link </li>
+    </ul>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div id="linearnav"> <br style="clear:both;"/>
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previousbottom" -->&laquo; <a href="overview.html">Overview</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nextbottom" --><a href="software.html">Software</a> &raquo;<!-- InstanceEndEditable --></div>
+    <br style="clear:both;"/>
+  </div>
+</div>
+<div id="bottomnav">
+  <ul>
+	<li><a id="home" href="index.html">Home</a></li>
+	<li><a id="overview" href="overview.html">Overview</a></li>
+	<li><a id="hardware" href="hardware.html">Hardware</a></li>
+	<li><a id="software" href="software.html">Software</a></li>
+	<li><a id="results" href="results.html">Results</a></li>
+	<li><a id="information" href="information.html">More Information</a></li>
+  </ul>
+</div>
+<div id="footer">
+  <p>Last Updated
+    <!-- #BeginDate format:Sw1a -->27 October, 2005 0:30 AM<!-- #EndDate -->
+  </p>
+  <p>&copy;2005 <a href="information.html">Li-Wen Yip</a>. All Rights Reserved.</p>
+
+
+
+  <!-- Start of StatCounter Code -->
+  <script type="text/javascript">
+<!-- 
+var sc_project=1012185; 
+var sc_invisible=0; 
+var sc_partition=9; 
+var sc_security="37937b86"; 
+var sc_text=2; 
+//-->
+</script>
+This page has been viewed <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+  <noscript>
+  <div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c10.statcounter.com/counter.php?sc_project=1012185&java=0&security=37937b86&invisible=0" alt="free webpage hit counter" /></a></div>
+  </noscript> times.
+  <!-- End of StatCounter Code -->
+  <a href="http://my.statcounter.com/project/standard/stats.php?project_id=1012185&guest=1">Stats</a></div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,121 @@
+/* CSS Document */
+
+
+body {
+	background: #EEEEEE;
+}
+
+#body {
+	/* Put it in the middle of the page */
+	width: 762px;
+	margin: 0 auto;
+	padding: 0;
+
+	/* Make it nice and white and put a nice border around it */
+	background: white;
+	border: 1px solid #A9A9A9;
+	
+}
+
+/* Banner Stuff */
+
+#banner {
+
+	/* Put a border around it */
+	border: solid white 1px;
+
+	/* Don't need a bottom border on this one */
+	border-bottom: none;
+}
+#banner h1 {
+	/* Get rid of that annoying gap */
+	margin: 0;
+}
+
+
+
+/* Navbar Layout */
+#topnav, #bottomnav {
+	/* Put it in the middle of the page, and squash it up nice and close */
+	width: 760px;
+	margin: 0 auto;
+}
+#topnav {
+	/* Put a border around it */
+	border: solid white 1px;
+
+	/* Make it nice and green */
+	background: #123813;
+}
+#topnav ul, #bottomnav ul {
+	/* Get rid of the indents */
+	margin: 0;
+	
+	/* Keep away from the edges */
+	padding: 6px;
+}
+#topnav ul li, #bottomnav ul li {
+	/* Get rid of the bullets */
+	list-style: none;
+	
+	/* Move everything up to the same line */
+	display: inline;
+	
+	/* Space it out a bit */
+	margin: 0 6px;
+}
+#topnav ul li a, #bottomnav ul li a {
+	/* Keep away from the edges */
+	padding: 6px;
+}
+#topnav ul li a:hover {
+	background: #3A783D;
+}
+
+
+
+/* Content Layout */
+#content {
+	/* Put it in the middle of the page, and squash it up nice and close */
+	width: 736px;
+	margin: 0 auto;
+	
+	clear: both;
+	
+	/* Keep away from the edges */
+	padding: 0 12px;
+	/* Put a border around it */
+	border: solid white 1px;
+	
+}
+
+
+
+/* Positioning */
+.floatleft {
+	float: left;
+	margin-right: 20px;
+}
+.floatright {
+	float: right;
+	margin-left: 20px;
+}
+
+
+
+/* Link Boxes */
+div.linkbox {
+	background-color: #EEEEFF;
+	border: 1px solid #a9a9a9;
+	margin: 0;
+	padding: 6px 12px 6px 6px;
+	font-size: 80%;
+}
+.linkbox p {
+	margin: 0;
+}
+.linkbox ul {
+	padding: 0;
+	margin: 0 0 0 15px;
+	list-style-type: none;
+}

@@ -1,0 +1,47 @@
+/* Drop Shadows */
+
+
+.img-shadow, .img-shadow .inner, .table-shadow, .table-shadow .inner {
+	float: left;
+}
+.img-shadow, .p-shadow, .table-shadow {
+	clear: both;
+	background: url(../images/drop-shadows/shadow.gif) no-repeat bottom right;
+	margin: 14px 0 0 17px !important;
+	margin: 14px 0 0 8px;
+	}
+
+.img-shadow .inner, .p-shadow .inner, .table-shadow .inner {
+	background: url(../images/drop-shadows/shadow2.png) no-repeat left top !important;
+	background: url(../images/drop-shadows/shadow2.gif) no-repeat left top;
+	padding: 0px 6px 6px 0px;
+}
+.img-shadow img {
+	background-color: #fff;
+	border: 1px solid #a9a9a9;
+	padding: 4px;
+	margin: 0;
+}
+
+.p-shadow {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 600px;
+}
+
+.p-shadow p {
+	margin: 0;
+	background: #EEEEFF;
+	padding: 12px;
+	border: 1px solid #999999;
+	font-style: italic;
+}
+.p-shadow + * {
+	clear: both;
+}
+
+
+.caption {
+	font-size: 80%;
+	text-align: center;
+}

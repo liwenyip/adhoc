@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="description" content="Remote Ad Hoc Sensor Networks">
+<meta name="keywords" content="ad hoc sensor networks">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Remote Ad Hoc Sensor Networks - Results</title>
+<!-- InstanceEndEditable -->
+<link href="styles/main-layout.css" rel="stylesheet" type="text/css" />
+<link href="styles/main-formatting.css" rel="stylesheet" type="text/css" />
+<link href="styles/shadows.css" rel="stylesheet" type="text/css" />
+<!--[if gte ie 5.5000]>
+<style type="text/css">
+.img-shadow div, .p-shadow div { 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/drop-shadows/shadow2.png', sizingMethod='crop'); 
+	background: none;
+	}
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="activelink" -->
+<style type="text/css">
+	a#results {
+		font-weight: bold;
+	}
+	#topnav a#results  {
+		background-color: #3A783D;
+	}
+	#bottomnav a#results {
+		text-decoration: underline;
+	}
+</style>
+<!-- InstanceEndEditable -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77691127-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="body">
+  <div id="banner"> <!-- InstanceBeginEditable name="Banner" --><img src="images/banners/results.jpg" width="760" height="237" alt="Remote Ad Hoc Sensor Networks, James Cook University - Results" /><!-- InstanceEndEditable --></div>
+  <div id="topnav">
+    <ul>
+      <li><a id="home" href="index.html">Home</a></li>
+      <li><a id="overview" href="overview.html">Overview</a></li>
+      <li><a id="hardware" href="hardware.html">Hardware</a></li>
+      <li><a id="software" href="software.html">Software</a></li>
+      <li><a id="results" href="results.html">Results</a></li>
+      <li><a id="information" href="information.html">More Information</a></li>
+    </ul>
+  </div>
+  <div id="linearnav">
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previoustop" -->&laquo; <a href="addressing.html">Dynamic Address Allocation</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nexttop" --><a href="information.html">More Information</a> &raquo;<!-- InstanceEndEditable --></div>
+  </div>
+  <br style="clear:both;"/>
+  <!-- InstanceBeginEditable name="Content" -->
+  <div id="content">
+    <table width="235" cellpadding="0" cellspacing="0" class="floatright">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/adg918-insitu.jpg" alt="Mica Mote Family" width="250" height="167" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Wideband CMOS Switch under test <a href="http://www.xbow.com/"></a></td>
+      </tr>
+    </table>
+    <h2>Hardware</h2>
+    <p>The hardware platform worked as expected, with the newly added real time clock working brilliantly as a time-keeper for the sleep schedule. The Wideband CMOS switch consumes so little current that it cannot be measured with a multimeter. The measured port separation of the switch was approximately 35 dB (Data sheet specifies 43dB) - this is easily sufficient to prevent oscillations in the amplifier, however it shows that there is still room for improvement in the RF design of the PCB. In particular, the use of IC sockets to attach RF IC carrier boards appears to have caused some insertion loss. </p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <table width="235" cellpadding="0" cellspacing="0" class="floatright">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/clock-detect-graph.gif" alt="Mica Mote Family" width="350" height="288" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Clock Detect Flag vs Frequency <a href="http://www.xbow.com/"></a></td>
+      </tr>
+    </table>
+    <h2>Manchester Encoding/Decoding </h2>
+    <p>There were several problems with undocumented bugs in both the MPSIM simulation enviroment, and the ICE2000 emulator. However, the workarounds for these bugs actually reduced the number of processor cycles required for encoding. The use of &quot;processing slack&quot; was proven by pushing the encoder to its theoretical speed limit of 11.628 kbps. The clock detect mechanism was also proven to work very well, with a clock rate tolerance of 8.5%.</p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+    </div>
+<div id="content">
+  <h2>Power Saving Techniques</h2>
+  <p>The scheduled rendezvous mechanism was implemented and verified, as well as a basic synchronisation mechanism. It was found that because the timer used for the sleep schedule only has a resolution of 1 second, an error of up to 1 second occurs with each synchronisation hop. This is easily compensated for by adding one second to the clock each time a synchronisation occurs. </p>
+  <p>The preamble sampling technique was modelled, and the assumptions made about the hardware were experimentally verified. A basic adaptive preamble sampling protocol was implemented and verified, however software simulation is required to verify and better understand other aspects of the technique. </p>
+  <p id="backtotop"><a href="#">Back To Top</a></p>
+  <h2>Dynamic Address Allocation</h2>
+  <p>The dynamic address allocation protocol was partially implemented in the ns-2 network simulator, however there were severe problems getting the code to compile and run. This was mainly due to the complexity and poor support for the simulation software, despite its ubiquity amongst the research community. Due to time restrictions, development was terminated before any results could be obtained. </p>
+  <p id="backtotop"><a href="#">Back To Top</a></p>
+  <h1>Future Work</h1>
+  <h2>Software Simulation</h2>
+  <p> The power saving protocol has been implemented and tested
+    on the microcontroller hardware, and sufficient results have been obtained to conclude
+    that the protocol is capable of providing significant power savings. However, there are
+    no results which quantify the power savings for realistic network scenarios. Similarly,<br />
+    the new dynamic addressing protocol definitely provides power savings over its
+    predecessors; however the exact improvement has not been quantified. A focus of future work will be software simulation of these, and other protocols to better understand and improve upon them. </p>
+  <p id="backtotop"><a href="#">Back To Top</a></p>
+  <h2>Location Discovery</h2>
+  <p>    Because the nodes do not have MAC addresses and network addresses are
+    dynamically assigned, the nodes have no hard coded identification number.
+    Consequently, once the nodes have been deployed, the only way to tell which node is
+    which is with application layer support.</p>
+  <p> Other ad hoc networks face a similar problem where the nodes are not deployed to
+    known locations, for example if an area is blanketed with nodes for surveillance. An
+    obvious solution is to attach a GPS module to each node, however this is costly,
+    bulky, and power consuming. An alternative is to use a distributed location discovery
+    algorithm, which uses triangulation to calculate the relative positions of each
+    node, given there are three nodes whose absolute positions are known.</p>
+  <p>The triangulation algorithm typically uses the received signal strength indicator
+    (RSSI) as a measure of the distance between nodes. Unfortunately, in a sparse outdoor
+    ad hoc network, problems such as localised geography, multi-path propagation, and
+    weather conditions will likely make this measurement unsuitable. However, the long
+    distances between nodes make it viable to use propagation delay as a measure of
+    distance. Assuming that a 20 MHz PIC microcontroller can measure propagation
+    delay to a precision of 200 nanoseconds 2, distance can be calculated to a precision of<br />
+    60m.</p>
+  <p>This is clearly only possible in ad hoc networks with large distances between nodes,
+    thus it is a unique possibility for this project, and should be investigated further in a
+    subsequent thesis.</p>
+  <p id="backtotop"><a href="#">Back To To</a></p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div id="linearnav"> <br style="clear:both;"/>
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previousbottom" -->&laquo; <a href="addressing.html">Dynamic Address Allocation</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nextbottom" --><a href="information.html">More Information</a> &raquo;<!-- InstanceEndEditable --></div>
+    <br style="clear:both;"/>
+  </div>
+</div>
+<div id="bottomnav">
+  <ul>
+	<li><a id="home" href="index.html">Home</a></li>
+	<li><a id="overview" href="overview.html">Overview</a></li>
+	<li><a id="hardware" href="hardware.html">Hardware</a></li>
+	<li><a id="software" href="software.html">Software</a></li>
+	<li><a id="results" href="results.html">Results</a></li>
+	<li><a id="information" href="information.html">More Information</a></li>
+  </ul>
+</div>
+<div id="footer">
+  <p>Last Updated
+    <!-- #BeginDate format:Sw1a -->27 October, 2005 2:44 AM<!-- #EndDate -->
+  </p>
+  <p>&copy;2005 <a href="information.html">Li-Wen Yip</a>. All Rights Reserved.</p>
+
+
+
+  <!-- Start of StatCounter Code -->
+  <script type="text/javascript">
+<!-- 
+var sc_project=1012185; 
+var sc_invisible=0; 
+var sc_partition=9; 
+var sc_security="37937b86"; 
+var sc_text=2; 
+//-->
+</script>
+This page has been viewed <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+  <noscript>
+  <div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c10.statcounter.com/counter.php?sc_project=1012185&java=0&security=37937b86&invisible=0" alt="free webpage hit counter" /></a></div>
+  </noscript> times.
+  <!-- End of StatCounter Code -->
+  <a href="http://my.statcounter.com/project/standard/stats.php?project_id=1012185&guest=1">Stats</a></div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="description" content="Remote Ad Hoc Sensor Networks">
+<meta name="keywords" content="ad hoc sensor networks">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Remote Ad Hoc Sensor Networks - Manchester Encoding/Decoding</title>
+<!-- InstanceEndEditable -->
+<link href="styles/main-layout.css" rel="stylesheet" type="text/css" />
+<link href="styles/main-formatting.css" rel="stylesheet" type="text/css" />
+<link href="styles/shadows.css" rel="stylesheet" type="text/css" />
+<!--[if gte ie 5.5000]>
+<style type="text/css">
+.img-shadow div, .p-shadow div { 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/drop-shadows/shadow2.png', sizingMethod='crop'); 
+	background: none;
+	}
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="activelink" -->
+<style type="text/css">
+	a#software {
+		font-weight: bold;
+	}
+	#topnav a#software  {
+		background-color: #3A783D;
+	}
+	#bottomnav a#software {
+		text-decoration: underline;
+	}
+	li#manchester {
+		list-style-type: disc;
+		
+	}
+</style>
+<!-- InstanceEndEditable -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77691127-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="body">
+  <div id="banner"> <!-- InstanceBeginEditable name="Banner" --><img src="images/banners/software.jpg" alt="Remote Ad Hoc Sensor Networks - Manchester Encoding/Decoding" width="760" height="237" /><!-- InstanceEndEditable --></div>
+  <div id="topnav">
+    <ul>
+      <li><a id="home" href="index.html">Home</a></li>
+      <li><a id="overview" href="overview.html">Overview</a></li>
+      <li><a id="hardware" href="hardware.html">Hardware</a></li>
+      <li><a id="software" href="software.html">Software</a></li>
+      <li><a id="results" href="results.html">Results</a></li>
+      <li><a id="information" href="information.html">More Information</a></li>
+    </ul>
+  </div>
+  <div id="linearnav">
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previoustop" -->&laquo; <a href="software.html">Software</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nexttop" --><a href="powersaving.html">Power Saving Techniques</a> &raquo;<!-- InstanceEndEditable --></div>
+  </div>
+  <br style="clear:both;"/>
+  <!-- InstanceBeginEditable name="Content" -->
+  <div id="content">
+    <div class="floatright">
+      <div class="table-shadow">
+        <div class="inner">
+          <div class="linkbox">
+            <p style="font-weight:bold;"><a href="software.html">Software</a>:</p>
+            <ul>
+              <li id="manchester"><a href="manchester.html">Manchester Encoding/Decoding</a></li>
+              <li id="powersaving"><a href="powersaving.html">Power Saving Techniques</a></li>
+              <li id="addressing"><a href="addressing.html">Dynamic Address Allocation </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1>Manchester Encoding/Decoding</h1>
+    <p>The X2010 FM Transceiver used in this project only works with AC data signals, thus all data must be manchester encoded  by the microprocessor prior to transmission. Synchronous encoding in general also has its advantages, such as being able to receieve at different data rates by calculating the frequency of the preamble.</p>
+    <p>In Manchester encoded data, the NRZ binary signal is XOR'ed with a 50% duty cycle clock running at twice the data rate (Figure 1). As a result, a '1' is encoded to a '10', and a '0' is encoded to a '01'. The resulting bits are called 'chips'. </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/manchester-coding.gif" alt="Manchester Coding" width="360" height="233" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 1: Manchester Encoded Signal</td>
+      </tr>
+    </table>
+    <p>The previously used Manchester encoding and decoding algorithms had several flaws, including succeptibility to phase drift, low tolerance to clock rate error, unreliable synchronisation, and poor performance. Both algorithms have been reveloped using a different approach, resulting in significant perfomance improvements.</p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Manchester Encoding Algorithm</h2>
+    <p>Previously, the output was cacluated and set all in the one step, making the phase of the signal dependent on the time taken to calculate the output value. In the new Manchester encoding algorithm, each change of the output is calculated in advance and scheduled using  a capture/compare interrupt (Figure 2). As a result, any possibility of phase drift is completely eliminated. </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/manchester-encoding.gif" alt="Manchester Coding" width="551" height="234" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 2: Manchester Encoded Signal</td>
+      </tr>
+    </table>
+    <p>This technique also allows for &quot;processing slack&quot; in the system, which enables the entire encoding algorithm to be run under interrupt, freeing up the microprocessor's spare cycles for other tasks. Consider that a data fetching operation occurs between the calculation of chip 1 and chip 2 (Figure 3). As long as the calculations for chip 2 are complete before it is scheduled to be set, the output is not affected.</p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/manchester-encoding-slack.gif" alt="Manchester Coding" width="565" height="228" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 3: Processing Slack </td>
+      </tr>
+    </table>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Manchester Decoding Algorithm </h2>
+    <p>The previous Manchester decoding algorithm relied on start/stop bits, which incurred a 25% bandwidth overhead, and could not synchronise quickly or reliably. The new Manchester decoding algorithm is based on an existing technique, which synchronises to the clock encoded in the signal, and will correctly acquire the clock as soon as the data bit value changes  (Figure 4).</p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/manchester-decoding.gif" alt="Manchester Coding" width="527" height="199" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 4: Manchester Decoding </td>
+      </tr>
+    </table>
+    <p>The algorithm can be summarised as follows:</p>
+    <ol>
+      <li>Wait for an edge (of either polarity).</li>
+      <li>Wait 1.5 chip periods. </li>
+      <li>Take a sample.</li>
+      <li>Rinse, lather, and repeat.</li>
+    </ol>
+    <p>Note in Figure 4 that even if an incorrect edge is detected as the clock, the correct edge will be acquired as soon as the data bit changes from a 1 to a 0 (or vice versa).</p>
+    <p>Apart from eliminating the 25% bandwidth overhead of the start/stop bits, and quick and reliable synchronisation, the new algorithm is much more efficient - Whereas the previous decoding algorithm limited the speed of the system to 2.4 kbps, the new algorithm has been tested and shown to work at 9.6 kbps. Faster data rates mean less utilization of the medium, leading to lower power consumption, and less chance of collisions. For this project, the data rate was set at 5 kbps, and the microprocessor powered down during the spare instruction cycles to save power. </p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Clock Detection</h2>
+    <p>Due to the relatively poor signal-to-noise ratios in remote ad hoc sensor networks, the <em>carrier detect</em> (CD) and <em>recieved signal strength indicator</em> (RSSI) functions of the transceiver cannot always be relied upon to determine if a valid signal is present. As an alternative, an algorithm was developed which detects whether a valid clock signal is present. It works by verifying that the delay between clock edges is no more than 1 clock period, (2 chip periods). </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/clock-detect.gif" alt="Manchester Coding" width="475" height="189" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 5: Clock Detect Mechanism </td>
+      </tr>
+    </table>
+    <p>The algorithm can be summarised as follows: </p>
+    <ol>
+      <li>Every time a clock edge is detected, a 'clock watchdog timer' is set to go off in 1.1 clock periods.</li>
+      <li>If another clock edge is detected before 1.1 clock periods have elapsed, the timer is reset and nothing happens. This allows for a 10% clock rate error.</li>
+      <li>If no clock edge is detected before 1.1 clock periods have elapsed, the timer goes off, indicating that the clock signal has been lost.  
+        <p id="backtotop"><a href="#">Back To Top</a></p>
+      </li>
+    </ol>
+  </div>
+  <div id="content">
+    <h2>Links</h2>
+    <ul>
+      <li></li>
+    </ul>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div id="linearnav"> <br style="clear:both;"/>
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previousbottom" -->&laquo; <a href="software.html">Software</a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nextbottom" --><a href="powersaving.html">Power Saving Techniques</a> &raquo;<!-- InstanceEndEditable --></div>
+    <br style="clear:both;"/>
+  </div>
+</div>
+<div id="bottomnav">
+  <ul>
+	<li><a id="home" href="index.html">Home</a></li>
+	<li><a id="overview" href="overview.html">Overview</a></li>
+	<li><a id="hardware" href="hardware.html">Hardware</a></li>
+	<li><a id="software" href="software.html">Software</a></li>
+	<li><a id="results" href="results.html">Results</a></li>
+	<li><a id="information" href="information.html">More Information</a></li>
+  </ul>
+</div>
+<div id="footer">
+  <p>Last Updated
+    <!-- #BeginDate format:Sw1a -->27 October, 2005 1:01 AM<!-- #EndDate -->
+  </p>
+  <p>&copy;2005 <a href="information.html">Li-Wen Yip</a>. All Rights Reserved.</p>
+
+
+
+  <!-- Start of StatCounter Code -->
+  <script type="text/javascript">
+<!-- 
+var sc_project=1012185; 
+var sc_invisible=0; 
+var sc_partition=9; 
+var sc_security="37937b86"; 
+var sc_text=2; 
+//-->
+</script>
+This page has been viewed <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+  <noscript>
+  <div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c10.statcounter.com/counter.php?sc_project=1012185&java=0&security=37937b86&invisible=0" alt="free webpage hit counter" /></a></div>
+  </noscript> times.
+  <!-- End of StatCounter Code -->
+  <a href="http://my.statcounter.com/project/standard/stats.php?project_id=1012185&guest=1">Stats</a></div>
+</body>
+<!-- InstanceEnd --></html>

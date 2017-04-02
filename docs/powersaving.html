@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="description" content="Remote Ad Hoc Sensor Networks">
+<meta name="keywords" content="ad hoc sensor networks">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Remote Ad Hoc Sensor Networks - Power Saving Techniques</title>
+<!-- InstanceEndEditable -->
+<link href="styles/main-layout.css" rel="stylesheet" type="text/css" />
+<link href="styles/main-formatting.css" rel="stylesheet" type="text/css" />
+<link href="styles/shadows.css" rel="stylesheet" type="text/css" />
+<!--[if gte ie 5.5000]>
+<style type="text/css">
+.img-shadow div, .p-shadow div { 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/drop-shadows/shadow2.png', sizingMethod='crop'); 
+	background: none;
+	}
+</style>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceBeginEditable name="activelink" -->
+<style type="text/css">
+	a#software {
+		font-weight: bold;
+	}
+	#topnav a#software  {
+		background-color: #3A783D;
+	}
+	#bottomnav a#software {
+		text-decoration: underline;
+	}
+	li#powersaving {
+		list-style-type: disc;
+		
+	}
+</style>
+<!-- InstanceEndEditable -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77691127-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="body">
+  <div id="banner"> <!-- InstanceBeginEditable name="Banner" --><img src="images/banners/software.jpg" alt="Remote Ad Hoc Sensor Networks - Power Saving Techniques" width="760" height="237" /><!-- InstanceEndEditable --></div>
+  <div id="topnav">
+    <ul>
+      <li><a id="home" href="index.html">Home</a></li>
+      <li><a id="overview" href="overview.html">Overview</a></li>
+      <li><a id="hardware" href="hardware.html">Hardware</a></li>
+      <li><a id="software" href="software.html">Software</a></li>
+      <li><a id="results" href="results.html">Results</a></li>
+      <li><a id="information" href="information.html">More Information</a></li>
+    </ul>
+  </div>
+  <div id="linearnav">
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previoustop" -->&laquo; <a href="manchester.html">Manchester Encoding/Decoding </a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nexttop" --><a href="addressing.html">Dynamic Address Allocation</a> &raquo;<!-- InstanceEndEditable --></div>
+  </div>
+  <br style="clear:both;"/>
+  <!-- InstanceBeginEditable name="Content" -->
+  <div id="content">
+  <div class="floatright">
+    <div class="table-shadow">
+      <div class="inner">
+        <div class="linkbox">
+          <p style="font-weight:bold;"><a href="software.html">Software</a>:</p>
+          <ul>
+            <li id="manchester"><a href="manchester.html">Manchester Encoding/Decoding</a></li>
+            <li id="powersaving"><a href="powersaving.html">Power Saving Techniques</a></li>
+            <li id="addressing"><a href="addressing.html">Dynamic Address Allocation </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <h1>Power Saving Techniques</h1>
+    <p>One of the most important goals for this project is minimising power consumption, in order to maximise battery life. A significant amount of power is wasted by idle nodes continuously listening for radio activiy. There are significant power savings to be made by placing nodes' radios in sleep mode to avoid unneccesary listening, especially in low traffic networks.</p>
+  </div>
+  <div id="content">
+    <h2>Scheduled Rendezvous </h2>
+    <p>Many data collection applications require regular bulk data transfer from each sensor node back to the information sink; i.e. the traffic pattern is predetermined and periodic. A <em>scheduled rendezvous</em> protocol  suits this application ver well, that is all nodes wake up simulateously, forming a short window for communications.(Figure 1). For the example of collecting data from Great Barrier Reef weather stations, the data would be collected every hour, so a possible schedule would be wake up for five minutes at the beginning of every hour. </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/rendezvous-schedule.gif" alt="Rendezvous Schedule" width="524" height="66" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 1: Nodes wake up for 5 minutes every hour </td>
+      </tr>
+    </table>
+    <p>However, there are a number of problems with this approach:</p>
+    <p>Some researchers have argued that scheduled rendezvous is not viable in ad hoc networks due to the difficulty of distributed clock synchronisation. Normally, the length of an active interval would be in the order of milliseconds. However, the active intervals considered for this project are in the order of minutes, hence the synchronisation has a much larger tolerance for error.</p>
+    <p>The second problem is gradual drifting of the sleep cycles in different nodes (Figure 2). This is easily countered using a technique called <em>phase detection</em>, which basically involves calculating the difference in phase between two nodes' schedules. The only information required is a counter indicating the phase of the source node, which allows receiving nodes to calculate their respective phase difference, and if neccesary make adjustments. </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/phase-drift.gif" alt="Rendezvous Schedule" width="503" height="119" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 2: Phase drift </td>
+      </tr>
+    </table>
+    <p>The third problem is significant: there is no connectivity between nodes during the sleep periods. Normally this is not a problem, as the sleep period is in the order of milliseconds. However, when the sleep period is in the order of hours, operations such as adding a new node to the network cannot occur until the next rendezvous occurs. Additionally, if two nodes are out of phase, they may never discover each other (Figure 2). The solution: preamble sampling.</p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Preamble Sampling</h2>
+    <p>Preamble sampling allows the network to retain connectivity in power save mode. The cost is a higher energy cost to transmit, but idle modes are able to make drastic power savings.</p>
+    <p>Preamble sampling involves using long packet preambles as a mechanism to wake up other nodes. Idle nodes do not continously listen to the medium, instead they briefly check for activity at regular intervals. If any activity is detected, the node stays awake until it is satisfied the activity has ceased.</p>
+    <p>The key concept is that the preamble is the same length as one sampling cycle, so that every node will sample and be woken by the preamble, regardless of the phase of its  schedule. Therefore, there is a tradeoff: With a slower sampling frequency (lower duty cycle), more power is saved by the receiver, but more energy is required to transmit the longer preamble. The approximate power savings are given by:</p>
+    <div align="center"><img src="images/power-saving-eqn.gif" width="369" height="79" /> </div>
+    <p>Where:</p>
+    <ul>
+      <li><em>Pnet</em> is the total power saving (Watts) </li>
+      <li><em>t</em> is the length of the sleep interval (seconds)</li>
+      <li><em>T</em> is the length of the listen interval (seconds)</li>
+      <li> <em>Pt</em> is the power consumed whilst transmitting (Watts)</li>
+      <li><em>Pr</em> is the power consumed whilst receiving (Watts)</li>
+      <li><em>f</em> is the average number of packets transmitted per second (Hz) </li>
+      <li><em>n</em> is the average number of nodes affected by each transmission (network density)</li>
+    </ul>
+    <p>This expression was plotted in MATLAB with parameters based on the actual hardware being used for the project, and several traffic rates and node densities: </p>
+    <table border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><div class="img-shadow">
+            <div class="inner"><img src="images/preamblesampling-graph.gif" alt="Rendezvous Schedule" width="689" height="372" /></div>
+        </div></td>
+      </tr>
+      <tr>
+        <td class="caption">Figure 3: Power Saving vs Sampling Frequency<br />
+        Low Traffic = 1/1800 Hz, Medium Traffic = 1/60 Hz, High Traffic = 1 Hz </td>
+      </tr>
+    </table>
+    <p>As can be seen in Figure 3, the best power savings occur with low traffic levels and low network density, thus this technique is well suited to the application. The maximum power savings are approximately 99%. </p>
+    <p>The optimum sleep interval is given by:</p>
+    <div align="center"><img src="images/optimum-sampling-interval.gif" width="288" height="83" /> </div>
+    <p>Note that the optimum sleep interval is dependent on the network density, and more importantly, the traffic rate. </p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Dynamic Optimisation</h2>
+    <p>&quot;Conversations&quot; between two or more nodes may cause localised increased traffic levels. If these changes can be anticpated, the sampling frequency can be dynamically optimised to acheieve the best power savings. This has been implemented and verified in its simplest form:</p>
+    <ul>
+      <li>After a node transmits or receives a packet, it raises its sampling frequency for a predetermined timeout. </li>
+      <li>After a node transmits a packet, it switches to using a shorter preamble.</li>
+    </ul>
+    <p>If a node transmits a packet, it knows its neighbouring nodes will have raised their sampling frequency, so it can still talk to them with a shorter preamble. However, this approach lacks intelligence: A node will always raise its sampling frequency after transmitting or receiving, regardless of the probability of any further activity occurring. Future work may involve using network and application layer information to decide how to adjust the sampling frequency and preamble length, which would result in a very intelligent algorithm. </p>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <div id="content">
+    <h2>Links</h2>
+    <ul>
+      <li></li>
+    </ul>
+    <p id="backtotop"><a href="#">Back To Top</a></p>
+  </div>
+  <!-- InstanceEndEditable -->
+  <div id="linearnav"> <br style="clear:both;"/>
+    <div class="floatleft" style="text-align:left; padding:6px;"><!-- InstanceBeginEditable name="previousbottom" -->&laquo; <a href="manchester.html">Manchester Encoding/Decoding </a> <!-- InstanceEndEditable --></div>
+    <div class="floatright" style="text-align:right; padding:6px;"><!-- InstanceBeginEditable name="nextbottom" --><a href="addressing.html">Dynamic Address Allocation</a> &raquo;<!-- InstanceEndEditable --></div>
+    <br style="clear:both;"/>
+  </div>
+</div>
+<div id="bottomnav">
+  <ul>
+	<li><a id="home" href="index.html">Home</a></li>
+	<li><a id="overview" href="overview.html">Overview</a></li>
+	<li><a id="hardware" href="hardware.html">Hardware</a></li>
+	<li><a id="software" href="software.html">Software</a></li>
+	<li><a id="results" href="results.html">Results</a></li>
+	<li><a id="information" href="information.html">More Information</a></li>
+  </ul>
+</div>
+<div id="footer">
+  <p>Last Updated
+    <!-- #BeginDate format:Sw1a -->27 October, 2005 0:30 AM<!-- #EndDate -->
+  </p>
+  <p>&copy;2005 <a href="information.html">Li-Wen Yip</a>. All Rights Reserved.</p>
+
+
+
+  <!-- Start of StatCounter Code -->
+  <script type="text/javascript">
+<!-- 
+var sc_project=1012185; 
+var sc_invisible=0; 
+var sc_partition=9; 
+var sc_security="37937b86"; 
+var sc_text=2; 
+//-->
+</script>
+This page has been viewed <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+  <noscript>
+  <div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c10.statcounter.com/counter.php?sc_project=1012185&java=0&security=37937b86&invisible=0" alt="free webpage hit counter" /></a></div>
+  </noscript> times.
+  <!-- End of StatCounter Code -->
+  <a href="http://my.statcounter.com/project/standard/stats.php?project_id=1012185&guest=1">Stats</a></div>
+</body>
+<!-- InstanceEnd --></html>
